@@ -1,7 +1,7 @@
 <?php
-// Classe mère Application dont héritent HTTPRequest et HTTPResponse
+// Classe mère Application
 
-namespace OCRFram
+namespace OCRFram;
 
 abstract class Application
 {
@@ -12,8 +12,8 @@ abstract class Application
 	// Le constructeur se contente juste d'instancier ses classes filles
 	public function __construct()
 	{
-		$this->HTTPRequest = new HTTPRequest;
-		$this->HTTPResponse = new HTTPResponse;
+		$this->HTTPRequest = new HTTPRequest($this);
+		$this->HTTPResponse = new HTTPResponse($this);
 		$this->name = '';
 	}
 

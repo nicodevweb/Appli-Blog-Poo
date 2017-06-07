@@ -1,9 +1,9 @@
 <?php
 // Représentation de la réponse envoyée au client
 
-namespace OCRFram
+namespace OCRFram;
 
-class HTTPResponse
+class HTTPResponse extends ApplicationComponent
 {
 	protected $page;
 

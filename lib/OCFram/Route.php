@@ -39,6 +39,32 @@ class Route
 		}
 	}
 
+	// Getters de la classe Route
+	public function action()
+	{
+		return $this->action;
+	}
+
+	public function module()
+	{
+		return $this->module;
+	}
+
+	public function url()
+	{
+		return $this->url;
+	}
+
+	public function varsNames()
+	{
+		return $this->varsNames;
+	}
+
+	public function vars()
+	{
+		return $this->vars;
+	}
+
 	// Setters de la classe Route
 	public function setAction($action)
 	{
@@ -72,31 +98,5 @@ class Route
 	public function setVars(array $vars)
 	{
 		$this->vars = $vars;
-	}
-
-	// Getters de la classe Route
-	public function action()
-	{
-		return $this->action;
-	}
-
-	public function module()
-	{
-		return $this->module;
-	}
-
-	public function url()
-	{
-		return $this->url;
-	}
-
-	public function varsNames()
-	{
-		return $this->varsNames;
-	}
-
-	public function vars()
-	{
-		return $this->vars;
 	}
 }

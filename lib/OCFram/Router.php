@@ -50,6 +50,6 @@ class Router
 			}
 		}
 
-		throw new \RunTimeException('Aucune route ne correspond à l\'URL ' . sel::NO_ROUTE);
+		throw new \RunTimeException('Aucune route ne correspond à l\'URL ' . self::NO_ROUTE);
 	}
 }

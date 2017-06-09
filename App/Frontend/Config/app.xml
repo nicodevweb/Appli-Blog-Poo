@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <definitions>
+	<!-- Définit le nombre de news affichées dans la liste -->
+	<define var="nombre_news" value="5" ></define>
+	<!-- Définit le nombre de caractères affiché au maximum pour chaque news de la liste -->
+	<define var="nombre_caracteres" value="200" ></define>
 </definitions>

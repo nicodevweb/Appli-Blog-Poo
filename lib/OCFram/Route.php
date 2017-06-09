@@ -1,7 +1,7 @@
 <?php
 // Classe traitant des routes : une URL associée à un module et une action
 
-namespace OCRFram;
+namespace OCFram;
 
 class Route
 {

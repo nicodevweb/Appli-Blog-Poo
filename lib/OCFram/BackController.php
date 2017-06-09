@@ -5,7 +5,7 @@
 // - D'exécuter une action
 // - D'btenir la page associée au contrôleur
 // - De modifier le module, l'action et la vue associés au contrôleur
-namespace OCRFram;
+namespace OCFram;
 
 abstract class BackController extends ApplicationComponent
 {

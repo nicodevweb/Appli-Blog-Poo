@@ -1,7 +1,7 @@
 <?php
 // Représentation de la réponse envoyée au client
 
-namespace OCRFram;
+namespace OCFram;
 
 class HTTPResponse extends ApplicationComponent
 {

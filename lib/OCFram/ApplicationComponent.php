@@ -1,7 +1,7 @@
 <?php
 // Classe mètre ApplicationComponent dont héritent HTTPRequest et HTTPResponse, stockant l'instance de l'application exécutée pendant la construction de l'objet
 
-namespace OCRFram;
+namespace OCFram;
 
 abstract class ApplicationComponent
 {

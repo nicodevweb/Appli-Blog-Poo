@@ -1,13 +1,15 @@
 <?php
 // Classe mère Application
 
-namespace OCRFram;
+namespace OCFram;
 
 abstract class Application
 {
 	protected	$HTTPRequest,
 				$HTTPResponse,
-				$name;
+				$name,
+				$user,
+				$config;
 
 	// Le constructeur se contente juste d'instancier ses classes filles
 	public function __construct()
@@ -15,6 +17,7 @@ abstract class Application
 		$this->HTTPRequest = new HTTPRequest($this);
 		$this->HTTPResponse = new HTTPResponse($this);
 		$this->name = '';
+		$this->user = new User($this);
 	}
 
 	// Méthode permettant de récupérer le controller du router
@@ -68,6 +71,12 @@ abstract class Application
 	// Méthode d'éxecution de l'application
 	abstract public function run();
 
+	// Getter de la configuration
+	public function config()
+	{
+		return $this->config;
+	}
+
 	// Getter d'une instance HTTPRequest
 	public function httpRequest()
 	{
@@ -80,9 +89,15 @@ abstract class Application
 		return $this->HTTPResponse;
 	}
 
-	// Getter du nom de m'application
+	// Getter du nom de l'application
 	public function name()
 	{
 		return $this->name;
+	}
+
+	// Getter de l'utilisateur
+	public function user()
+	{
+		return $this->user;
 	}
 }

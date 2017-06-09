@@ -1,7 +1,7 @@
 <?php
 // Classe permettant la recherche des routes
 
-namespace OCRFram;
+namespace OCFram;
 
 class Router
 {

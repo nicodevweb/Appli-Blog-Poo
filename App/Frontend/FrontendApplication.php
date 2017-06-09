@@ -4,8 +4,6 @@
 // Assignation de la page créée par le contrôleur à la réponse.
 // Envoi de la réponse.
 
-
-
 class FrontendApplication extends Application
 {
   public function __construct()

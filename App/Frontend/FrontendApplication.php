@@ -3,6 +3,9 @@
 // Exécution du contrôleur.
 // Assignation de la page créée par le contrôleur à la réponse.
 // Envoi de la réponse.
+namespace App\Frontend;
+ 
+use \OCFram\Application;
 
 class FrontendApplication extends Application
 {

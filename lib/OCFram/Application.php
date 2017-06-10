@@ -5,8 +5,8 @@ namespace OCFram;
 
 abstract class Application
 {
-	protected	$HTTPRequest,
-				$HTTPResponse,
+	protected	$httpRequest,
+				$httpResponse,
 				$name,
 				$user,
 				$config;
@@ -14,8 +14,8 @@ abstract class Application
 	// Le constructeur se contente juste d'instancier ses classes filles
 	public function __construct()
 	{
-		$this->HTTPRequest = new HTTPRequest($this);
-		$this->HTTPResponse = new HTTPResponse($this);
+		$this->httpRequest = new httpRequest($this);
+		$this->httpResponse = new httpResponse($this);
 		$this->name = '';
 		$this->user = new User($this);
 	}
@@ -80,13 +80,13 @@ abstract class Application
 	// Getter d'une instance HTTPRequest
 	public function httpRequest()
 	{
-		return $this->HTTPRequest;
+		return $this->httpRequest;
 	}
 
 	// Getter d'une instance de HTTPResponse
 	public function httpResponse()
 	{
-		return $this->HTTPResponse;
+		return $this->httpResponse;
 	}
 
 	// Getter du nom de l'application
